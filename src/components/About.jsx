@@ -5,7 +5,7 @@ import {
   FaCloud,
   FaTools,
   FaUserFriends,
-} from "react-icons/fa"; // Import icons from FontAwesome
+} from "react-icons/fa"; // Importer les icônes de FontAwesome
 import {
   SiVisualstudiocode,
   SiFirebase,
@@ -15,8 +15,8 @@ import {
   SiPython,
   SiJavascript,
   SiPowerbi,
-} from "react-icons/si"; // Import other tool icons
-import { FaProjectDiagram } from "react-icons/fa"; // Agile icon
+} from "react-icons/si"; // Importer les autres icônes d'outils
+import { FaProjectDiagram } from "react-icons/fa"; // Icône Agile
 import user_image from "../assets/samia.jpg";
 import circular_text from "../assets/circular-text.png";
 
@@ -24,9 +24,9 @@ const About = () => {
   return (
     <div id="about" className="w-full px-[12%] py-10 scroll-mt-2 mt-36">
       {" "}
-      {/* Added margin-top */}
+      {/* Ajouté une marge supérieure */}
       <h4 className="text-center mb-2 text-lg font-Ovo">Introduction</h4>
-      <h2 className="text-center text-5xl font-Ovo">About me</h2>
+      <h2 className="text-center text-5xl font-Ovo">À propos de moi</h2>
       <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
         <div className="max-w-max mx-auto relative">
           <img
@@ -46,13 +46,13 @@ const About = () => {
         </div>
         <div className="flex-1">
           <p className="mb-10 max-w-2xl font-Ovo">
-            Etudiante en BTS Informatique en recherche d’une alternance d’un
-            rythme de 1 semaine en entreprise, 1 semaine en école à partir de
-            Septembre 2024
+            Je m'appelle BOUTEZROUT Samia, je suis étudiante en BTS SIO. Je me
+            spécialise dans la conception de Solutions Logicielles et
+            d'Applications Métiers.
           </p>
 
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
-            {/* Support IT Card */}
+            {/* Carte Support IT */}
             <li className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
               <FaCode className="w-7 h-7 mt-3 text-gray-700 dark:text-white" />
               <h3 className="my-4 font-semibold text-gray-700 dark:text-white">
@@ -63,18 +63,18 @@ const About = () => {
               </p>
             </li>
 
-            {/* Web Dev Card */}
+            {/* Carte Web Dev */}
             <li className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
               <FaLaptopCode className="w-7 h-7 mt-3 text-gray-700 dark:text-white" />
               <h3 className="my-4 font-semibold text-gray-700 dark:text-white">
-                Web Dev
+                Développement Web
               </h3>
               <p className="text-gray-600 text-sm dark:text-white/80">
                 HTML, CSS, JavaScript, Python, PHP, Java
               </p>
             </li>
 
-            {/* Cloud Card */}
+            {/* Carte Cloud */}
             <li className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
               <FaCloud className="w-7 h-7 mt-3 text-gray-700 dark:text-white" />
               <h3 className="my-4 font-semibold text-gray-700 dark:text-white">
@@ -85,59 +85,57 @@ const About = () => {
               </p>
             </li>
 
-            {/* New Interests Card */}
+            {/* Nouvelle Carte Intérêts */}
             <li className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
               <FaUserFriends className="w-7 h-7 mt-3 text-gray-700 dark:text-white" />
               <h3 className="my-4 font-semibold text-gray-700 dark:text-white">
                 Intérêts
               </h3>
               <p className="text-gray-600 text-sm dark:text-white/80">
-                Agile, Full Stack Engineering, Cybersecurity
+                Agile, Ingénierie Full Stack, Cybersécurité
               </p>
             </li>
           </ul>
 
           <h4 className="my-6 text-gray-700 font-Ovo dark:text-white/80">
-            Tools I use
+            Outils que j'utilise
           </h4>
 
           <ul className="flex items-center gap-3 sm:gap-5">
-            {/* AWS Icon */}
-
-            {/* Python Icon */}
+            {/* Icône Python */}
             <li className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
               <SiPython className="w-5 h-5 sm:w-7 sm:h-7 text-blue-400" />{" "}
-              {/* Python - Blue */}
+              {/* Python - Bleu */}
             </li>
 
-            {/* JavaScript Icon */}
+            {/* Icône JavaScript */}
             <li className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
               <SiJavascript className="w-5 h-5 sm:w-7 sm:h-7 text-yellow-400" />{" "}
-              {/* JavaScript - Yellow */}
+              {/* JavaScript - Jaune */}
             </li>
             <li className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
               <SiVisualstudiocode className="w-5 h-5 sm:w-7 sm:h-7 text-blue-600" />{" "}
-              {/* VSCode - Blue */}
+              {/* VSCode - Bleu */}
             </li>
             <li className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
               <SiFirebase className="w-5 h-5 sm:w-7 sm:h-7 text-yellow-500" />{" "}
-              {/* Firebase - Yellow */}
+              {/* Firebase - Jaune */}
             </li>
             <li className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
               <SiMongodb className="w-5 h-5 sm:w-7 sm:h-7 text-green-600" />{" "}
-              {/* MongoDB - Green */}
+              {/* MongoDB - Vert */}
             </li>
 
-            {/* Power BI Icon */}
+            {/* Icône Power BI */}
             <li className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
               <SiPowerbi className="w-5 h-5 sm:w-7 sm:h-7 text-yellow-500" />{" "}
-              {/* Power BI - Yellow */}
+              {/* Power BI - Jaune */}
             </li>
 
-            {/* Agile Icon */}
+            {/* Icône Agile */}
             <li className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
               <FaProjectDiagram className="w-5 h-5 sm:w-7 sm:h-7 text-green-500" />{" "}
-              {/* Agile - Green */}
+              {/* Agile - Vert */}
             </li>
           </ul>
         </div>

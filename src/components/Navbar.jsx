@@ -114,20 +114,45 @@ const Navbar = () => {
           className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo
         dark:border dark:border-white/50 dark:bg-transparent "
         >
-          <li>
-            <a href="#top">Home</a>
+          <li className="hover:border-b-2 border-purple-500">
+            <a
+              href="#top"
+              className="no-underline hover:border-b-2 border-purple-500"
+            >
+              Accueil
+            </a>
           </li>
-          <li>
-            <a href="#about">About me</a>
+          <li className="hover:border-b-2 border-purple-500">
+            <a
+              href="#about"
+              className="no-underline hover:border-b-2 border-purple-500"
+            >
+              À propos
+            </a>
           </li>
-          <li>
-            <a href="#services">Services</a>
+          <li className="hover:border-b-2 border-purple-500">
+            <a
+              href="#services"
+              className="no-underline hover:border-b-2 border-purple-500"
+            >
+              Services
+            </a>
           </li>
-          <li>
-            <a href="#work">My Work</a>
+          <li className="hover:border-b-2 border-purple-500">
+            <a
+              href="#work"
+              className="no-underline hover:border-b-2 border-purple-500"
+            >
+              Mes Projets
+            </a>
           </li>
-          <li>
-            <a href="#contact">Contact me</a>
+          <li className="hover:border-b-2 border-purple-500">
+            <a
+              href="#contact"
+              className="no-underline hover:border-b-2 border-purple-500"
+            >
+              Contact
+            </a>
           </li>
         </ul>
 
@@ -155,7 +180,7 @@ const Navbar = () => {
             <img src={menu_white} alt="" className="w-6 hidden dark:block" />
           </button>
         </div>
-        {/* -- ----- mobile menu ------  -- */}
+        {/* -- ----- menu mobile ------  -- */}
         <ul
           ref={sideMenuRef}
           className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Ovo dark:bg-darkHover dark:text-white"
@@ -174,29 +199,29 @@ const Navbar = () => {
             />
           </div>
 
-          <li>
-            <a href="#top" onClick={closeMenu}>
-              Home
+          <li className="hover:border-b-2 border-purple-500">
+            <a href="#top" onClick={closeMenu} className="no-underline">
+              Accueil
             </a>
           </li>
-          <li>
-            <a href="#about" onClick={closeMenu}>
-              About me
+          <li className="hover:border-b-2 border-purple-500">
+            <a href="#about" onClick={closeMenu} className="no-underline">
+              À propos
             </a>
           </li>
-          <li>
-            <a href="#services" onClick={closeMenu}>
+          <li className="hover:border-b-2 border-purple-500">
+            <a href="#services" onClick={closeMenu} className="no-underline">
               Services
             </a>
           </li>
-          <li>
-            <a href="#work" onClick={closeMenu}>
-              My Work
+          <li className="hover:border-b-2 border-purple-500">
+            <a href="#work" onClick={closeMenu} className="no-underline">
+              Mes Projets
             </a>
           </li>
-          <li>
-            <a href="#contact" onClick={closeMenu}>
-              Contact me
+          <li className="hover:border-b-2 border-purple-500">
+            <a href="#contact" onClick={closeMenu} className="no-underline">
+              Contact
             </a>
           </li>
         </ul>

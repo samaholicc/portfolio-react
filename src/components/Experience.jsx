@@ -33,7 +33,9 @@ const Experience = () => {
 
   return (
     <div className="w-full px-[5%] py-10">
-      <h2 className="text-center text-5xl font-Ovo mb-10">Experience</h2>
+      <h2 className="text-center text-5xl font-Ovo mb-10">
+        Experience Ptofesionelles
+      </h2>
       <div className="relative">
         {/* Vertical Line */}
         <div className="hidden md:block absolute w-1 bg-gray-300 h-full left-1/2 transform -translate-x-1/2"></div>

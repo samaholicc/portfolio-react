@@ -1,25 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion"; // Importing framer-motion for animations
 
 const Education = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [selectedOptions, setSelectedOptions] = useState([]);
+
   const education = [
     {
-      institution: "BTS en informatique Webitech Paris",
-      startDate: "September 2023",
-      endDate: "June 2024",
-      branch: "Software Engineer",
+      institution: "Option SISR",
+      desc: "Solutions d'Infrastructure, Systèmes et Réseaux. Cette option se concentre sur la gestion des réseaux et des systèmes informatiques.",
+      option1: "Réseaux et télécommunications",
+      option2: "Administration des systèmes",
+      option3: "Sécurité informatique",
+      option4: "Gestion des bases de données",
     },
     {
-      institution: "Baccalauréat scientifique AL QALAM",
-      startDate: "September 2018",
-      endDate: "June 2019",
-      branch: "Scientifique",
+      institution: "Option SLAM",
+      desc: "Solutions Logicielles et Applications Métiers. Cette option se concentre sur le développement d’applications et de logiciels.",
+      option1: "Développement d’applications",
+      option2: "Bases de données",
+      option3: "Rédaction de cahier des charges",
+      option4: "Maintenance des applications",
     },
   ];
 
+  // Function to handle modal popup
+  const handleShowOptions = (eduOptions) => {
+    setSelectedOptions(eduOptions);
+    setShowModal(true);
+  };
+
+  // Function to close modal
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <div className="w-full px-[5%] py-10">
-      <h2 className="text-center text-5xl font-Ovo mb-10">Education</h2>
+      <h2 className="text-center text-5xl font-Ovo mb-10">BTS SIO</h2>
       <div className="relative">
         {/* Vertical Line (Only on larger screens) */}
         <div className="hidden md:block absolute w-1 bg-gray-300 h-full left-1/2 transform -translate-x-1/2"></div>
@@ -56,17 +74,56 @@ const Education = () => {
                 <h3 className="text-2xl font-semibold text-gray-700 dark:text-white">
                   {edu.institution}
                 </h3>
-                <p className="text-gray-600 text-sm dark:text-white/80">
-                  {edu.startDate} - {edu.endDate}
-                </p>
                 <p className="text-gray-600 text-sm dark:text-white/80 mt-2">
-                  Branch: {edu.branch}
+                  {edu.desc}
                 </p>
+                <button
+                  className="mt-4 px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700"
+                  onClick={() =>
+                    handleShowOptions([
+                      edu.option1,
+                      edu.option2,
+                      edu.option3,
+                      edu.option4,
+                    ])
+                  }
+                >
+                  Show Technologie
+                </button>
               </div>
             </motion.div>
           ))}
         </div>
       </div>
+
+      {/* Modal Popup */}
+      {showModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.3 }}
+            className="bg-white rounded-lg p-8 w-[90%] md:w-[40%] shadow-lg"
+          >
+            <h3 className="text-2xl font-semibold text-gray-700 mb-4">
+              Options
+            </h3>
+            <ul className="space-y-2 text-gray-600">
+              {selectedOptions.map((option, idx) => (
+                <li key={idx} className="text-lg">
+                  • {option}
+                </li>
+              ))}
+            </ul>
+            <button
+              className="mt-6 px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700"
+              onClick={handleCloseModal}
+            >
+              Close
+            </button>
+          </motion.div>
+        </div>
+      )}
     </div>
   );
 };

@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
+import Projects from "./components/Projects";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Education />
       <Services />
       <Work />
+      <Projects />
       <Contact />
       <Footer />
     </>
