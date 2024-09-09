@@ -36,7 +36,7 @@ const Education = () => {
   };
 
   return (
-    <div className="w-full px-[5%] py-10">
+    <div id="educations" className="w-full px-[5%] py-10">
       <h2 className="text-center text-5xl font-Ovo mb-10">BTS SIO</h2>
       <div className="relative">
         {/* Vertical Line (Only on larger screens) */}

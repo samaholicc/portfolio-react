@@ -116,18 +116,18 @@ const Navbar = () => {
         >
           <li className="hover:border-b-2 border-purple-500">
             <a
-              href="#top"
+              href="#educations"
               className="no-underline hover:border-b-2 border-purple-500"
             >
-              Accueil
+              BTS SIO
             </a>
           </li>
           <li className="hover:border-b-2 border-purple-500">
             <a
-              href="#about"
+              href="#work"
               className="no-underline hover:border-b-2 border-purple-500"
             >
-              À propos
+              Realisations
             </a>
           </li>
           <li className="hover:border-b-2 border-purple-500">
@@ -135,12 +135,12 @@ const Navbar = () => {
               href="#services"
               className="no-underline hover:border-b-2 border-purple-500"
             >
-              Services
+              Veille-technologique
             </a>
           </li>
           <li className="hover:border-b-2 border-purple-500">
             <a
-              href="#work"
+              href="#projects"
               className="no-underline hover:border-b-2 border-purple-500"
             >
               Mes Projets

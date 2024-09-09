@@ -4,23 +4,7 @@ import project2 from "../assets/project2.png";
 import project3 from "../assets/project3.png";
 
 const Projects = () => {
-  const projects = [
-    {
-      name: "Réseau",
-      image: project1,
-      desc: "Un site de commerce électronique avancé offrant une expérience d'achat fluide avec intégration des paiements.",
-    },
-    {
-      name: "Fibre optique",
-      image: project2,
-      desc: "Un portfolio personnel pour présenter les compétences en développement web et les derniers projets.",
-    },
-    {
-      name: "Réseau de Neurones",
-      image: project3,
-      desc: "Une application mobile multiplateforme conçue pour la gestion des tâches et la collaboration.",
-    },
-  ];
+  const projects = [];
 
   return (
     <div id="projects" className="w-full px-[12%] py-10 scroll-mt-20">
