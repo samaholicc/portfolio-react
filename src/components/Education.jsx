@@ -88,7 +88,7 @@ const Education = () => {
                     ])
                   }
                 >
-                  Show Technologie
+                  Voir les détails
                 </button>
               </div>
             </motion.div>
@@ -119,7 +119,7 @@ const Education = () => {
               className="mt-6 px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700"
               onClick={handleCloseModal}
             >
-              Close
+              Fermer
             </button>
           </motion.div>
         </div>
