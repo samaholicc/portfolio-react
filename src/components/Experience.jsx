@@ -34,7 +34,7 @@ const Experience = () => {
   return (
     <div className="w-full px-[5%] py-10">
       <h2 className="text-center text-5xl font-Ovo mb-10">
-        Experience Ptofesionelles
+        Expériences Professionnelles
       </h2>
       <div className="relative">
         {/* Vertical Line */}
@@ -59,8 +59,8 @@ const Experience = () => {
               <div
                 className={`w-full md:w-[40%] p-6 border border-gray-400 rounded-xl shadow-md hover:shadow-lg hover:-translate-y-1 duration-500 ${
                   index % 2 === 0
-                    ? "md:ml-8 text-left"
-                    : "md:mr-8 text-left md:text-right"
+                    ? "md:ml-8 text-left" // Left alignment for VINCI
+                    : "md:mr-8 text-right md:text-left" // Right alignment for CGI, but text is aligned left inside
                 }`}
               >
                 <h3 className="text-2xl font-semibold text-gray-700 dark:text-white">

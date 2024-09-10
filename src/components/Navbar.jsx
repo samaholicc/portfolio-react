@@ -111,23 +111,24 @@ const Navbar = () => {
 
         <ul
           ref={navLinkRef}
-          className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo
-        dark:border dark:border-white/50 dark:bg-transparent "
+          className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-5 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo
+    dark:border dark:border-white/50 dark:bg-transparent"
         >
+          <li className="hover:border-b-2 border-purple-500">
+            <a
+              href="#about"
+              className="no-underline hover:border-b-2 border-purple-500"
+            >
+              À propos
+            </a>
+          </li>{" "}
+          {/* Added "À propos" here */}
           <li className="hover:border-b-2 border-purple-500">
             <a
               href="#educations"
               className="no-underline hover:border-b-2 border-purple-500"
             >
               BTS SIO
-            </a>
-          </li>
-          <li className="hover:border-b-2 border-purple-500">
-            <a
-              href="#work"
-              className="no-underline hover:border-b-2 border-purple-500"
-            >
-              Realisations
             </a>
           </li>
           <li className="hover:border-b-2 border-purple-500">
@@ -140,10 +141,18 @@ const Navbar = () => {
           </li>
           <li className="hover:border-b-2 border-purple-500">
             <a
+              href="#work"
+              className="no-underline hover:border-b-2 border-purple-500"
+            >
+              Realisations
+            </a>
+          </li>
+          <li className="hover:border-b-2 border-purple-500">
+            <a
               href="#projects"
               className="no-underline hover:border-b-2 border-purple-500"
             >
-              Mes Projets
+              Projets
             </a>
           </li>
           <li className="hover:border-b-2 border-purple-500">
@@ -200,22 +209,29 @@ const Navbar = () => {
           </div>
 
           <li className="hover:border-b-2 border-purple-500">
-            <a href="#top" onClick={closeMenu} className="no-underline">
-              Accueil
-            </a>
-          </li>
-          <li className="hover:border-b-2 border-purple-500">
             <a href="#about" onClick={closeMenu} className="no-underline">
               À propos
             </a>
           </li>
+
           <li className="hover:border-b-2 border-purple-500">
-            <a href="#services" onClick={closeMenu} className="no-underline">
-              Services
+            <a href="#educations" onClick={closeMenu} className="no-underline">
+              BTS SIO
             </a>
           </li>
           <li className="hover:border-b-2 border-purple-500">
+            <a href="#services" onClick={closeMenu} className="no-underline">
+              Veille-technologique
+            </a>
+          </li>
+
+          <li className="hover:border-b-2 border-purple-500">
             <a href="#work" onClick={closeMenu} className="no-underline">
+              Mes Realisations
+            </a>
+          </li>
+          <li className="hover:border-b-2 border-purple-500">
+            <a href="#projects" onClick={closeMenu} className="no-underline">
               Mes Projets
             </a>
           </li>
