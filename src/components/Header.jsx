@@ -45,9 +45,21 @@ const Header = () => {
           />
         </a>
         
+        <a href={synthesis_table_pdf} // Lien correct vers le PDF du tableau synthèse
+          download="Tableau_Synthese.pdf" // Définir un nom de fichier correct pour le téléchargement
+          className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black"
+          >
+          Tableau Synthèse{" "}
+          <img
+          src={right_arrow_white}
+          alt="Icône de téléchargement"
+          className="w-4"
+        />
+        </a>
+
       </div>
     </div>
-  );
-};
+  
 
+  )} 
 export default Header;
