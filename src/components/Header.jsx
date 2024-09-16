@@ -44,18 +44,7 @@ const Header = () => {
             className="w-4"
           />
         </a>
-        <a
-          href={tableau_de_synthese.xlsx} // Lien correct vers le tableau synthese PDF
-          download="6- Annexe 6-1 - Tableau de syntheÌse - Epreuve E4 - BTS SIO 2023.xlsx" // Définir un nom de fichier correct pour le téléchargement
-          className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black"
-        >
-          Mon tableau de synthèse{" "}
-          <img
-            src={right_arrow_white}
-            alt="Icône de téléchargement"
-            className="w-4"
-          />
-        </a>
+      
       </div>
     </div>
   );
