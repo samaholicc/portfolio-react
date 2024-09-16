@@ -122,13 +122,18 @@ const Navbar = () => {
               À propos
             </a>
           </li>{" "}
-          {/* Added "À propos" here */}
           <li className="hover:border-b-2 border-purple-500">
             <a
               href="#educations"
-              className="no-underline hover:border-b-2 border-purple-500"
-            >
+              className="no-underline hover:border-b-2 border-purple-500">
               BTS SIO
+            </a>
+          </li>
+          <li className="hover:border-b-2 border-purple-500">
+            <a
+              href="#schools"
+              className="no-underline hover:border-b-2 border-purple-500">
+              Mes Ecoles et Entreprises
             </a>
           </li>
           <li className="hover:border-b-2 border-purple-500">
@@ -220,6 +225,11 @@ const Navbar = () => {
             </a>
           </li>
           <li className="hover:border-b-2 border-purple-500">
+            <a href="#schools" onClick={closeMenu} className="no-underline">
+              Mes Ecoles et Entreprises
+            </a>
+          </li>
+          <li className="hover:border-b-2 border-purple-500">
             <a href="#services" onClick={closeMenu} className="no-underline">
               Veille-technologique
             </a>
@@ -233,11 +243,6 @@ const Navbar = () => {
           <li className="hover:border-b-2 border-purple-500">
             <a href="#projects" onClick={closeMenu} className="no-underline">
               Mes Projets
-            </a>
-          </li>
-          <li className="hover:border-b-2 border-purple-500">
-            <a href="#contact" onClick={closeMenu} className="no-underline">
-              Contact
             </a>
           </li>
         </ul>
