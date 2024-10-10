@@ -109,36 +109,18 @@ const Navbar = () => {
             >
               À propos
             </a>
-<<<<<<< HEAD
           </li>
-=======
-          </li>{" "}
->>>>>>> 4e1397d27455a0d7d7eec6e8428a0a731d1300f6
           <li className="hover:border-b-2 border-purple-500">
             <a
               href="#educations"
-              className="no-underline hover:border-b-2 border-purple-500">
+              className="no-underline hover:border-b-2 border-purple-500"
+            >
               BTS SIO
             </a>
           </li>
           <li className="hover:border-b-2 border-purple-500">
-<<<<<<< HEAD
             <a href="#contact" onClick={closeMenu} className="no-underline">
               Ecole et Entreprise
-=======
-            <a
-              href="#schools"
-              className="no-underline hover:border-b-2 border-purple-500">
-              Mes Ecoles et Entreprises
-            </a>
-          </li>
-          <li className="hover:border-b-2 border-purple-500">
-            <a
-              href="#services"
-              className="no-underline hover:border-b-2 border-purple-500"
-            >
-              Veille-technologique
->>>>>>> 4e1397d27455a0d7d7eec6e8428a0a731d1300f6
             </a>
           </li>
 
@@ -207,13 +189,8 @@ const Navbar = () => {
             </a>
           </li>
           <li className="hover:border-b-2 border-purple-500">
-<<<<<<< HEAD
             <a href="#contact" onClick={closeMenu} className="no-underline">
-              Ecole et Entreprise
-=======
-            <a href="#schools" onClick={closeMenu} className="no-underline">
-              Mes Ecoles et Entreprises
->>>>>>> 4e1397d27455a0d7d7eec6e8428a0a731d1300f6
+              Ecole et Projets
             </a>
           </li>
           <li className="hover:border-b-2 border-purple-500">
@@ -230,6 +207,11 @@ const Navbar = () => {
           <li className="hover:border-b-2 border-purple-500">
             <a href="#projects" onClick={closeMenu} className="no-underline">
               Mes Projets
+            </a>
+          </li>
+          <li className="hover:border-b-2 border-purple-500">
+            <a href="#contact" onClick={closeMenu} className="no-underline">
+              Contact
             </a>
           </li>
         </ul>
